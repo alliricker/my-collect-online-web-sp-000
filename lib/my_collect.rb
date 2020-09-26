@@ -1,4 +1,9 @@
 def my_collect(array)
-my_collect do |collect|
+i = 0
+collection = []
+while i < array.length
+  collection << yield(array[i])
+  i += 1
   end
+  collection
 end
